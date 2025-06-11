@@ -1,0 +1,19 @@
+fieldset{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: baseline;
+}
+
+input{
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
