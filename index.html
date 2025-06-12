@@ -9,76 +9,127 @@
 </head>
 
 <body>
-    <fieldset>
-        <legend>Dados Pessoais</legend>
+
+    <legend>Dados Pessoa
         <form action="">
-            <label for="nome">Nome Completo</label>
-            <input type="text" id="nome" placeholder="digite seu Nome">
-            <br>
-            <label for="email">email</label>
-            <input type="email" id="email" placeholder="Digite seu email">
-            <br>
-            <label for="telefone">Telefone</label>
-            <input type="text" id="telefone" placeholder="Digite seu Telefone">
-            <br>
-            <label for="semha">Crie uma Senha</label>
-            <input type="password" id="senha" placeholder="Sua Senha">
-            <br>
-            <label for="estado">Estado</label>
-            <select name="estado" id="estado">
-                <option value=" ">Selecione um Estado</option>
+            <fieldset>
 
-                <option value="">Selecione um estado</option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="PR">Paraná</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SE">Sergipe</option>
-                <option value="SP">São Paulo</option>
-                <option value="TO">Tocantins</option>
-            </select>
-            <br>
+                <legend>Dados pessoais</legend>
 
-            <label for="file">Envie uma foto da sua CNH</label>
-            <input type="file" name="file" id="file">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" placeholder="digite seu Nome">
+                <br>
+                <label for="email">email</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+                <br>
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" placeholder="Digite seu Telefone">
+                <br>
+                <label for="semha">Crie uma Senha</label>
+                <input type="password" id="senha" placeholder="Sua Senha">
+                <br>
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                    <option value=" ">Selecione um Estado</option>
+
+                    <option value="">Selecione um estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <br>
+
+                <label for="file">Envie uma foto da sua CNH</label>
+                <input type="file" name="file" id="file">
+            </fieldset>
 
 
+            <fieldset>
+                <legend>Escolha do Carro</legend>
+
+                <p>Escolha o Modelo</p>
+                
+                    <input type="radio" name="BYD" id="carro">
+                    <label for="">BYD_Seal</label>
+                    <br>
+                    <input type="radio" name="BYD" id="carro">
+                    <label for="">BYD_HAN</label>
+                    <br>
+                    <input type="radio" name="BYD" id="carro">
+                    <label for="">BYD Song Plus</label>
+
+                    <p>Itens Adicionais</p>
+                    <input type="checkbox" name="som" id="som">
+                    <label for="som">Som Premium</label>
+                    <br>
+                    <input type="checkbox" name="ar" id="ar">
+                    <label for="ar">Ar-Condicionado Digital</label>
+                    <br>
+                    <input type="checkbox" name="cam" id="cam">
+                    <label for="cam">Câmera 360º</label>
+                    <br>
+                    <label for="cor">Cor do Carro</label>
+                    <input type="color" id="cor" name="cor" value="#000000">
+                    <br>
+                    <label for="brilho">Intensidade do Brilho</label>
+                    <input type="range" name="brilho" id="brilho">
+
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Entrega</legend>
+                <label for="data">Data desejada para Entrega</label>
+                <input type="date" name="data" id="data">
+                <br>
+                <label for="hora">Melhor horário de entrega</label>
+                <input type="time" name="hora" id="hora">
+                <br>
+                <label for="mes">Mês da Compra</label>
+                <input type="month" name="mes" id="mes">
+            </fieldset>
+
+            <fieldset>
+                <legend>Sua Opinião</legend>
+            
+                    <label for="opiniao">Conte suas expectativas sobre o Carro</label>
+                    <br>
+                    <textarea name="opiniao" id="opiniao"></textarea>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Avaliação dos Modelos BYD</legend>
+                <label for="av1">Avalie o BYD DOLPHIN PLUS</label>
+                <input type="">
+            </fieldset>
         </form>
-    </fieldset>
 
-    <fieldset>
-        <legend>Escolha do Carro</legend>
-        <form action="">
-            <input type="radio" name="BYD" id="carro">
-            <label for="">BYD_Seal</label>
-            <br>
-             <input type="radio" name="BYD" id="carro">
-            <label for="">BYD_HAN</label>
-            <br>
-             <input type="radio" name="BYD" id="carro">
-            <label for="">BYD Song Plus</label>
-        </form>
-    </fieldset>
+
 </body>
 
 </html>

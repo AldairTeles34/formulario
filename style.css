@@ -3,6 +3,7 @@ fieldset{
     padding: 10px;
     border-radius: 5px;
     align-items: baseline;
+    margin-bottom: 20px;
 }
 
 input{
