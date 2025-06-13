@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <legend>Dados Pessoa
+        <form action="get">
+            <fieldset>
+
+                <legend>Dados pessoais</legend>
+                <div class="campo">
+
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" placeholder="digite seu Nome">
+                    <br><br>
+                    <label for="email">email</label>
+                    <input type="email" id="email" placeholder="Digite seu email">
+                    <br><br>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" 
+                    pattern="[0-9]{2} [0-9]{4,5}-[0-9]{4}" 
+                    placeholder="(99)99999-9999">
+                    <br><br>
+                    <label for="senha">Crie uma Senha</label>
+                    <input type="password" id="senha" placeholder="Sua Senha">
+                    <br><br>
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="estado">
+                        <option value=" ">Selecione um Estado</option>
+    
+                        <option value="">Selecione um estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="PR">Paraná</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                    <br><br>
+    
+                    <label for="file">Envie uma foto da sua CNH</label>
+                    <input type="file" name="file" id="file">
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Escolha do Carro</legend>
+
+                <p>Escolha o Modelo</p>
+                
+                    <input type="radio" name="BYD" id="carro">
+                    <label for="">BYD_Seal</label>
+                    <br><br>
+                    <input type="radio" name="BYD" id="carro">
+                    <label for="">BYD_HAN</label>
+                    <br><br>
+                    <input type="radio" name="BYD" id="carro">
+                    <label for="">BYD Song Plus</label>
+
+                    <p>Itens Adicionais</p>
+                    <input type="checkbox" name="som" id="som">
+                    <label for="som">Som Premium</label>
+                    <br><br>
+                    <input type="checkbox" name="ar" id="ar">
+                    <label for="ar">Ar-Condicionado Digital</label>
+                    <br><br>
+                    <input type="checkbox" name="cam" id="cam">
+                    <label for="cam">Câmera 360º</label>
+                    <br><br>
+                    <label for="cor">Cor do Carro</label>
+                    <input type="color" id="cor" name="cor" value="#000000">
+                    <br><br>
+                    <label for="brilho">Intensidade do Brilho</label>
+                    <input type="range" name="brilho" id="brilho">
+
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Entrega</legend>
+                <label for="data">Data desejada para Entrega</label>
+                <input type="date" name="data" id="data">
+                <br><br>
+                <label for="hora">Melhor horário de entrega</label>
+                <input type="time" name="hora" id="hora">
+                <br><br>
+                <label for="mes">Mês da Compra</label>
+                <input type="month" name="mes" id="mes">
+            </fieldset>
+
+            <fieldset>
+                <legend>Sua Opinião</legend>
+            
+                    <label for="opiniao">Conte suas expectativas sobre o Carro</label>
+                    <br><br>
+                    <textarea name="opiniao" id="opiniao"></textarea>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Avaliação dos Modelos BYD</legend>
+                <label for="av1">Avalie o BYD DOLPHIN PLUS</label>
+                <input type="number" min="0" max="5" value="0">
+                <br><br>
+
+                <label for="av1">Avalie o BYD GS</label>
+                <input type="number" min="0" max="5" value="0">
+                <br><br>
+                <label for="av1">Avalie o BYD DOLPHIN MINI</label>
+                <input type="number" min="0" max="5" step="0" value="0">
+                
+            </fieldset>
+
+            <input type="submit" name="enviar" id="Enviar">
+            <input type="reset" value="Limpar">
+
+        </form>
+
+
+</body>
+
+</html>
